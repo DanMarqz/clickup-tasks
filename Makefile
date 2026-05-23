@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -g -Iinclude
-LDFLAGS = -lcurl -ljansson -lm
+CFLAGS = -Wall -g -Iinclude -I/opt/homebrew/opt/jansson/include
+LDFLAGS = -L/opt/homebrew/opt/jansson/lib -lcurl -ljansson -lm
 TARGET = clickup_tasks
 SRC_DIR = src
 OBJ_DIR = obj
